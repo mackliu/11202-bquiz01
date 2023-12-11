@@ -10,7 +10,8 @@
                     <td></td>
                 </tr>
                 <?php
-                $rows=$Image->all();
+
+                $rows=$DB->all();
                 foreach($rows as $row){
                 ?>
                 <tr>
