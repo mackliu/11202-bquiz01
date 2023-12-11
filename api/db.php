@@ -147,4 +147,5 @@ $Total=new DB('total');
 $Bottom=new DB('bottom');
 $Ad=new DB('ad');
 $Mvim=new DB('mvim');
+$Image=new DB('image');
 ?>
