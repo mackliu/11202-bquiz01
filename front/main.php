@@ -63,7 +63,7 @@
         <script>
             $(".ssaa li").hover(
                 function() {
-                    //$(this).children(".all").html()
+
                     $("#altt").html("<pre>" +$(this).children(".all").html()  + "</pre>")
                     $("#altt").show()
                 }
