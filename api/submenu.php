@@ -19,7 +19,7 @@ if(isset($_POST['add_text'])){
         if($text!=""){
             $data=[];
             $data['text']=$text;
-            $data['href']=$_POST['href'][$idx];
+            $data['href']=$_POST['add_href'][$idx];
             $data['sh']=1;
             $data['menu_id']=$_POST['menu_id'];
     
