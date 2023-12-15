@@ -4,6 +4,16 @@
     <!--正中央-->
     <script>
         var lin = new Array();
+        <?php $lins=$Mvim->all(['sh'=>1]);
+            $linarr=[];
+             foreach($lins as $lin){
+                $linarr[]="'".$lin['img']."'";
+                
+             }
+             $linstr=join(",",$linarr);
+
+            ?>
+            lin=[<?=$linstr;?>];
         var now = 0;
         if (lin.length > 1) {
             setInterval("ww()", 3000);
@@ -11,7 +21,7 @@
         }
 
         function ww() {
-            $("#mwww").html("<embed loop=true src='" + lin[now] + "' style='width:99%; height:100%;'></embed>")
+            $("#mwww").html("<embed loop=true src='./img/" + lin[now] + "' style='width:99%; height:100%;'></embed>")
             //$("#mwww").attr("src",lin[now])
             now++;
             if (now >= lin.length)
