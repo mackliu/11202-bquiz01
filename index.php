@@ -32,7 +32,9 @@
 						foreach($mainmu as $main){
 						?>
 						<div class='mainmu'>
-							<a  href="<?=$main['href'];?>" style="color:#000; font-size:13px; text-decoration:none;"><?=$main['text'];?></a>
+							<a  href="<?=$main['href'];?>" style="color:#000; font-size:13px; text-decoration:none;">
+								<?=$main['text'];?>
+							</a>
 							<?php
 							
 							if($Menu->count(['menu_id'=>$main['id']])>0){
@@ -48,10 +50,7 @@
 								echo "</div>";
 							}
 							?>
-							
 						</div>
-							
-						</a>
 						<?php
 						}
 						?>
@@ -120,7 +119,6 @@
 
 	 							}
 							}
-
 
 							pp(2)
                         </script>
