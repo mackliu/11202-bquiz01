@@ -15,6 +15,8 @@ if(isset($_FILES['img']['tmp_name'])){
 
     if($table != 'admin'){
         $_POST['sh']=($table=='title')?0:1;
+    }else{
+        $_POST['pw']=md5($_POST['pw']);
     }
 
 unset($_POST['table']);
